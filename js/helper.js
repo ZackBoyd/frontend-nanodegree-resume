@@ -115,7 +115,7 @@ function initializeMap() {
   For the map to be displayed, the googleMap var must be
   appended to #mapDiv in resumeBuilder.js. 
   */
-  map = new google.maps.Map(document.querySelector('#map'), mapOptions);
+  map = new google.maps.Map(document.querySelector('#mapDiv'), mapOptions);
 
 
   /*
@@ -133,7 +133,7 @@ function initializeMap() {
     // iterates through school locations and appends each location to
     // the locations array
     for (var school in education.schools) {
-      locations.push(education.schools[school].location);
+      locations.push(education.schools[school].city);
     }
 
     // iterates through work locations and appends each location to
