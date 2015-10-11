@@ -39,9 +39,11 @@ work.display = function() {
         var formattedworkDates = HTMLworkDates.replace("%data%", job.dates);
         var formattedworkDescription = HTMLworkDescription.replace("%data%", job.description);
         var formattedworkEmployerTitle = formattedworkEmployer + formattedworkTitle;
+        var formattedworkLocation = HTMLworkLocation.replace("%data%", job.location);
         $(".work-entry:last").append(formattedworkEmployerTitle);
         $(".work-entry:last").append(formattedworkDates);
         $(".work-entry:last").append(formattedworkDescription);
+        $(".work-entry:last").append(formattedworkLocation);
     });
 }
 
