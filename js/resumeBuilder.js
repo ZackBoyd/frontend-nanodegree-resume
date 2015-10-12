@@ -222,12 +222,6 @@ projects.display = function() {
         $(".project-entry:last").append(formattedTitle);
         $(".project-entry:last").append(formattedDates);
         $(".project-entry:last").append(formattedDescription);
-        if (project.images.length > 0) {
-            project.images.forEach(function(image){
-                var formattedImage = HTMLprojectImage.replace("%data%",image);
-                $(".project-entry:last").append(formattedImage);
-            });
-        }
     })
 };
 
